@@ -1,4 +1,23 @@
+@font-face {
+  font-family: Rokkitt;
+  src: url("../public/assets/fonts/rokkitt/Rokkitt-Regular.ttf");
+}
+
 @import "tailwindcss";
+@theme {
+  --font-rokkitt: Rokkitt, "sans-serif";
+
+  --animate-fadeIn: fadeIn 0.5s ease-in-out;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
 @plugin "daisyui";
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark;

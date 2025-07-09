@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
 import { StoreLayoutComponent } from './layouts/store-layout/store-layout.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { GenderPageComponent } from './pages/gender-page/gender-page.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+import { GenrePageComponent } from './pages/genre-page/genre-page.component';
 
 export const storeRoutes: Routes = [
   {
@@ -15,8 +15,8 @@ export const storeRoutes: Routes = [
         component: HomePageComponent,
       },
       {
-        path: 'gender/:gender',
-        component: GenderPageComponent,
+        path: 'genre/:genre',
+        component: GenrePageComponent,
       },
       {
         path: 'product/:idSlug',
