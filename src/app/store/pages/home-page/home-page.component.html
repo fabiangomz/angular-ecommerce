@@ -7,3 +7,7 @@
     <product-card />
     <product-card />
 </div>
+
+@for (album of albumService.albums(); track $index) {
+{{ album.name }} - {{ album.artistId }}
+}
